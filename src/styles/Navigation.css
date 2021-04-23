@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: rgb(56, 61, 63);
+    background: rgb(181, 77, 46);
     color: white;
     
 }
@@ -13,4 +13,10 @@
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    width: 25%;
+}
+
+.menuStyle {
+    text-decoration: none;
+    color: white;
 }

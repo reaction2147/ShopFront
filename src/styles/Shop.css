@@ -1,0 +1,12 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px 25px;
+  justify-content: center;
+  align-items: center;
+
+  }
+
+  .shop-menu {
+      color: white;
+  }
