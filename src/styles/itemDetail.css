@@ -7,3 +7,8 @@
     width: 400px;
     height: 400px;
 }
+
+#cart-item-count {
+margin-left: 10px;
+color: white;
+}

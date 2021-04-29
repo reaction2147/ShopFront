@@ -1,9 +1,10 @@
 import React from "react";
 import "../styles/Navigation.css";
-import { Link } from "react-router-dom";
+import { Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
-
-const Navigation = (props) => {
+const Navigation = ({cartItemCount}) => {
    
     
   return (
@@ -16,6 +17,10 @@ const Navigation = (props) => {
             <Link className="menuStyle" to="/shop">
                     <li>Shop</li>
             </Link>
+            <Link  exact to="/cart" id="basket-link" style={{ textDecoration: 'none' }} className="navbar-item">
+        <FontAwesomeIcon color="white" icon={faShoppingCart} size="lg"/>
+        <span color="white" id="cart-item-count">{cartItemCount}</span>
+      </Link>
             
       </ul>
     </nav>
