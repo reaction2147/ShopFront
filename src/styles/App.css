@@ -37,7 +37,3 @@
   }
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, min-max(300px 1fr));
-}

@@ -1,0 +1,9 @@
+.item-detail {
+    color: white;
+}
+
+.item-detail-image {
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+}

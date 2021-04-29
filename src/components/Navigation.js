@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/Navigation.css";
 import { Link } from "react-router-dom";
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
-const Navigation = () => {
 
+const Navigation = (props) => {
+   
+    
   return (
     <nav className="menu">
       <h3>Logo</h3>
@@ -15,7 +16,7 @@ const Navigation = () => {
             <Link className="menuStyle" to="/shop">
                     <li>Shop</li>
             </Link>
-            <ShoppingCartIcon />
+            
       </ul>
     </nav>
   );

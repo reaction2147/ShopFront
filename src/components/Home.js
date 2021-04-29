@@ -7,7 +7,9 @@ const Home = () => {
     {color: "white"}
 
     return (
+        <div>
         <h1 style={style}>Home</h1>
+        </div>
     )
 }
 
