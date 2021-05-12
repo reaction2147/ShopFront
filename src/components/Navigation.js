@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/Navigation.css";
 import { Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import {Context} from "./Context"
 
-const Navigation = ({cartItemCount}) => {
-   
+const Navigation = () => {
+const {cartItems} = useContext(Context)
     
   return (
     <nav className="menu">
@@ -19,7 +20,7 @@ const Navigation = ({cartItemCount}) => {
             </Link>
             <Link  exact to="/cart" id="basket-link" style={{ textDecoration: 'none' }} className="navbar-item">
         <FontAwesomeIcon color="white" icon={faShoppingCart} size="lg"/>
-        <span color="white" id="cart-item-count">{cartItemCount}</span>
+        <span color="white" id="cart-item-count">{cartItems.length}</span>
       </Link>
             
       </ul>

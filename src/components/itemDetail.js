@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import {Context} from "./Context"
 
 import "../styles/itemDetail.css"
-
-
 
 const ItemDetail = ({match}) => {
   useEffect(() => {
@@ -14,6 +13,7 @@ const ItemDetail = ({match}) => {
     images: {}
   });
   
+  const {addToCart} = useContext(Context)
 
   const fetchItem = async () => {
     const fetchItem = await fetch(
@@ -25,13 +25,13 @@ const ItemDetail = ({match}) => {
   };
 
   
-    
   return  (
     <div className="item-detail">
       <h1>{item.name}</h1>
       <h3>{item.description}</h3>
       <img className="item-detail-image" alt="" src={item.images.icon} />
-      <button id="add-to-cart-button"  >
+      <button id="add-to-cart-button" 
+              onClick={() => addToCart()} >
               Add to Cart
             </button>
     </div>
