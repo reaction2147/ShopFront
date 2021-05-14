@@ -26,14 +26,16 @@ const ItemDetail = ({match}) => {
 
   
   return  (
+    <div className="itemdetail-container">
     <div className="item-detail">
       <h1>{item.name}</h1>
       <h3>{item.description}</h3>
       <img className="item-detail-image" alt="" src={item.images.icon} />
       <button id="add-to-cart-button" 
-              onClick={() => addToCart()} >
+              onClick={() => addToCart(item)} >
               Add to Cart
             </button>
+            </div>
     </div>
   ) 
 };

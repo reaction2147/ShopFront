@@ -20,7 +20,7 @@ const {cartItems} = useContext(Context)
             </Link>
             <Link  exact to="/cart" id="basket-link" style={{ textDecoration: 'none' }} className="navbar-item">
         <FontAwesomeIcon color="white" icon={faShoppingCart} size="lg"/>
-        <span color="white" id="cart-item-count">{cartItems.length}</span>
+        <span color="white" id="cart-item-count">{cartItems.length >= 1 ? cartItems.length : null}</span>
       </Link>
             
       </ul>

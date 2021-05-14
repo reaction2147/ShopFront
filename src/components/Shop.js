@@ -1,27 +1,12 @@
 import React from "react";
 import "../styles/Shop.css";
-import { useState, useEffect } from "react";
+import {useContext } from "react";
 import { Link } from "react-router-dom";
+import {Context} from "./Context"
 
 const Shop = () => {
-  //code to fetch the data from the API
-
-  const [items, setItems] = useState([]);
-
-  const fetchItems = async () => {
-    const data = await fetch("https://fortnite-api.com/v2/cosmetics/br/new", {
-      mode: "cors",
-    });
-    const items = await data.json();
-    console.log(items.data.items);
-    setItems(items.data.items);
-  };
-
-  // Run function on mount
-
-  useEffect(() => {
-    fetchItems();
-  }, []);
+ 
+  const {items} = useContext(Context)
 
   return (
     <div>
