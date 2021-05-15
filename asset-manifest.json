@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/shopfront/static/css/main.ce565daf.chunk.css",
+    "main.js": "/shopfront/static/js/main.db38c115.chunk.js",
+    "main.js.map": "/shopfront/static/js/main.db38c115.chunk.js.map",
+    "runtime-main.js": "/shopfront/static/js/runtime-main.0b4b678c.js",
+    "runtime-main.js.map": "/shopfront/static/js/runtime-main.0b4b678c.js.map",
+    "static/js/2.25ce61cb.chunk.js": "/shopfront/static/js/2.25ce61cb.chunk.js",
+    "static/js/2.25ce61cb.chunk.js.map": "/shopfront/static/js/2.25ce61cb.chunk.js.map",
+    "index.html": "/shopfront/index.html",
+    "static/css/main.ce565daf.chunk.css.map": "/shopfront/static/css/main.ce565daf.chunk.css.map",
+    "static/js/2.25ce61cb.chunk.js.LICENSE.txt": "/shopfront/static/js/2.25ce61cb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b4b678c.js",
+    "static/js/2.25ce61cb.chunk.js",
+    "static/css/main.ce565daf.chunk.css",
+    "static/js/main.db38c115.chunk.js"
+  ]
+}
